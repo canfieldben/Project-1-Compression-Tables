@@ -3,7 +3,7 @@ dictionary for binary assignments
 """
 
 binary_dictionary = {
-    "a": 00,
+    "a": 0,
     "b": 1,
     "c": 2,
     "d": 3,

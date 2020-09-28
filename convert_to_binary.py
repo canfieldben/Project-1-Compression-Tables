@@ -15,5 +15,5 @@ def binary_assign(bin_dict, input_str):
     return empty_str
 
 
-trans_str = binary_assign(dictionary.binary_dictionary, read_file())
-write_file(trans_str)
+trans_str = binary_assign(dictionary.binary_dictionary, text_read_file())
+text_write_file(trans_str)
