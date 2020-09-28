@@ -1,1 +1,1 @@
-test sentence
+This table should include long and short characters, where the long characters are L bits long and the short characters are S bits long.  Using this compression table, you will write two programs in Python. One program will convert text into a binary representation of the text, and the other program will read in binary values and return the text that corresponds to that binary input.
