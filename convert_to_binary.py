@@ -2,15 +2,18 @@
 Converts the string input to binary
 """
 
-import read_file
+from read_file import *
 import dictionary
 
 
-def binary_assign(bin_dict, input_string):
-    for char in input_string:
+def binary_assign(bin_dict, input_str):
+    empty_str = ""
+    for char in input_str:
         if char in bin_dict:
+            empty_str += char + ":" + str(bin_dict[char])
             print(char + ":" + str(bin_dict[char]))
-    return
+    return empty_str
 
 
-binary_assign(dictionary.binary_dictionary, read_file.input_transfer)
+trans_str = binary_assign(dictionary.binary_dictionary, input_transfer)
+write_file(trans_str)
