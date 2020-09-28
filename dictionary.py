@@ -1,5 +1,5 @@
 """
-dictionary for binary assignments
+dictionary for binary and text assignments
 """
 
 binary_dictionary = {
