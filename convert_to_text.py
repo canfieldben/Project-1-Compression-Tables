@@ -9,12 +9,21 @@ from read_file import *
 def text_assign(bin_dict, input_bin):
     split_list = []
     empty_str = " "
-    for i in range(0, len(input_bin), 2):
-        split_list.append(input_bin[i:i + 2])
-    for r in split_list:
-        if int(r) in dictionary.text_dictionary:
-            empty_str += r + ":" + str(bin_dict[int(r)])
-            print(r + ":" + str(bin_dict[int(r)]))
+    index = 0
+    while index < len(input_bin):
+        first_num = input_bin[0]
+        if first_num == '1':
+            temp_str = input_bin[:5]
+            split_list.append(temp_str)
+            input_bin = input_bin[5:]
+        if first_num == '0':
+            temp_str = input_bin[:7]
+            split_list.append(temp_str)
+            input_bin = input_bin[7:]
+    index += 1
+    for i in split_list:
+        if i in bin_dict:
+            empty_str += str(bin_dict[i])
     return empty_str
 
 

@@ -10,8 +10,10 @@ def binary_assign(bin_dict, input_str):
     empty_str = ""
     for char in input_str:
         if char in bin_dict:
-            empty_str += char + ":" + str(bin_dict[char])
+            empty_str += str(bin_dict[char])
             print(char + ":" + str(bin_dict[char]))
+    total = len(empty_str)
+    empty_str = (str(total) + "." + empty_str)
     return empty_str
 
 
