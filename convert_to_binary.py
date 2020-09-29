@@ -14,7 +14,7 @@ def binary_assign(bin_dict, input_str):
     final_str = ""
 
     for string in split_string:
-        new_string = string.replace("and", "1").replace("the", "2").replace("of", "3").replace("th", "4").replace("er", "5").replace("on", "6").replace("ss", "7").replace("tt", "8")
+        new_string = string.replace("and", "1").replace("the", "2").replace("of", "3").replace("th", "4").replace("er", "5").replace("on", "6").replace("an", "7").replace("ss", "8").replace("tt", "9")
         new_strings.append(new_string)
 
     print(new_strings)
