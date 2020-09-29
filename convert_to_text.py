@@ -20,10 +20,12 @@ def text_assign(bin_dict, input_bin):
             temp_str = input_bin[:7]
             split_list.append(temp_str)
             input_bin = input_bin[7:]
+
     index += 1
     for i in split_list:
         if i in bin_dict:
             empty_str += str(bin_dict[i])
+            print(i + ":" + str(bin_dict[i]))
     return empty_str
 
 
