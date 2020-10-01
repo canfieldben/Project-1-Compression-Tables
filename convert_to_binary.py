@@ -7,7 +7,7 @@ import dictionary
 
 
 def binary_assign(bin_dict, input_str):
-    new_string = input_str.replace("and", "1").replace("the", "2").replace("of", "3").replace("th", "4").replace("er", "5").replace("on", "6").replace("an", "7").replace("ss", "8").replace("tt", "9").replace("ff", "$").replace("ea", "@").replace("he", "#").replace("in", "%").replace("\n", "&")
+    new_string = input_str.replace("and", "1").replace("the", "2").replace("of", "3").replace("th", "4").replace("er", "5").replace("on", "6").replace("an", "7").replace("ss", "8").replace("tt", "9").replace("ff", "$").replace("ea", "@").replace("he", "#").replace("in", "%").replace("\n", "&").replace("re", "^").replace("nt", "*")
     #print(new_string)
     empty_str = ""
     for char in new_string:
